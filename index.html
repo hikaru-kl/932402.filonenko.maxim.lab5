@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио фотографа: фотопроекты, настройки съёмки и галерея снимков.">
+  <title>Фотограф и визуальный сторителлер</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-light">
+  <header class="site-header">
+    <div class="photo-wrap">
+      <img src="avatar.jpg" alt="Портрет фотографа" width="140" height="140" class="header-photo">
+      <span class="photo-caption">Максим Филоненко</span>
+    </div>
+    <div class="header-text">
+      <h1>Филоненко Максим Викторович</h1>
+      <p>Фотограф и визуальный сторителлер</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Основная навигация">
+    <a href="#skills">Навыки</a>
+    <a href="#projects">Фотопроекты</a>
+    <a href="#gallery">Галерея снимков</a>
+    <a href="#settings">Настройки съёмки</a>
+    <a href="#contact">Обратная связь</a>
+  </nav>
+
+  <div class="layout">
+    <main>
+      <div class="intro">
+        <p>Рассказываю истории через кадр — от городских улиц до тихих деталей быта.</p>
+      </div>
+
+      <section id="skills">
+        <h2>Навыки</h2>
+        <ul>
+          <li>Построение композиции кадра</li>
+          <li>Работа с естественным и студийным светом</li>
+          <li>Цветокоррекция и постобработка в Lightroom</li>
+          <li>Съёмка репортажных и постановочных сцен</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Фотопроекты</h2>
+        <div class="project-cards">
+          <article class="project-card">
+            <div class="project-preview preview-city" role="img" aria-label="Ночная городская улица"></div>
+            <div class="project-info">
+              <h3>Городские тени</h3>
+              <p>Чёрно-белые снимки ночного города.</p>
+              <p class="location">Локация: центр города</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-people" role="img" aria-label="Уличные портреты"></div>
+            <div class="project-info">
+              <h3>Лица района</h3>
+              <p>Портреты людей из повседневной жизни.</p>
+              <p class="location">Локация: жилой район</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-morning" role="img" aria-label="Город на рассвете"></div>
+            <div class="project-info">
+              <h3>Тишина утра</h3>
+              <p>Спокойные кадры города до пробуждения.</p>
+              <p class="location">Локация: набережная</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview preview-building" role="img" aria-label="Старое здание"></div>
+            <div class="project-info">
+              <h3>Следы времени</h3>
+              <p>Архитектурные детали старых зданий.</p>
+              <p class="location">Локация: старый квартал</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Галерея снимков</h2>
+        <div class="gallery-controls">
+          <button type="button" id="add-photo">Добавить фото</button>
+          <button type="button" id="toggle-gallery" class="secondary-button">Скрыть галерею</button>
+          <button type="button" id="toggle-theme" class="secondary-button">Тёмная тема</button>
+        </div>
+        <div id="gallery-container" class="photo-gallery">
+          <figure class="gallery-item">
+            <div class="gallery-placeholder gallery-city" role="img" aria-label="Ночной город"></div>
+            <figcaption>Ночной город</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-placeholder gallery-sunrise" role="img" aria-label="Рассвет над городом"></div>
+            <figcaption>Рассвет над городом</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-placeholder gallery-street" role="img" aria-label="Городская улица"></div>
+            <figcaption>Городская улица</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="settings">
+        <h2>Настройки съёмки</h2>
+        <div class="settings-grid">
+          <article class="setting-card">
+            <div class="setting-icon" aria-hidden="true">ISO</div>
+            <h3>Светочувствительность</h3>
+            <p class="setting-value">ISO 400</p>
+            <p>Подходит для съёмки при умеренном освещении.</p>
+          </article>
+          <article class="setting-card">
+            <div class="setting-icon" aria-hidden="true">◷</div>
+            <h3>Выдержка</h3>
+            <p class="setting-value">1/250 с</p>
+            <p>Помогает сохранить резкость при съёмке движения.</p>
+          </article>
+          <article class="setting-card">
+            <div class="setting-icon" aria-hidden="true">ƒ</div>
+            <h3>Диафрагма</h3>
+            <p class="setting-value">f/2.8</p>
+            <p>Позволяет выделить объект на мягком фоне.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Обратная связь</h2>
+        <form action="#" method="post">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" placeholder="Напишите ваше сообщение"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Любимое направление</h2>
+      <p>Стрит-фотография — люблю ловить неповторимые моменты городской жизни, когда свет, люди и архитектура складываются в один случайный, но точный кадр.</p>
+      <p><a href="https://www.instagram.com" target="_blank" rel="noopener">Работы в Instagram</a></p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2026 Филоненко Максим Викторович.</p>
+    </footer>
+  </div>
+</body>
+</html>
